@@ -1,1 +1,132 @@
 
+# 1. Create a virtual environment
+python -m venv venv
+
+# 2. Activate it
+# On Windows:
+venv\Scripts\activate
+# On Mac/Linux:
+source venv/bin/activate
+
+# 3. Install the requirements
+pip install --upgrade pip
+pip install -r requirements.txt
+
+# 🚀 AI Platform Engineering: 8-Week Professional Sprint
+**Lead Instructor:** Shekhar K Prasad | *Corporate AI Consultant & Systems Architect*
+
+Welcome to the Elite AI Platform Engineering Cohort. This repository is your primary source for code, documentation, and lab exercises. Over the next 8 weeks, we transition from writing Python scripts to building production-grade AI platforms.
+
+---
+
+## 📅 Weekly Roadmap
+
+| Week | Focus Area | Status |
+| :--- | :--- | :--- |
+| **W1** | **Professional Python Engineering** | 🟢 Active |
+| **W2** | **Data Access Layer (SQL/NoSQL)** | ⚪ Scheduled |
+| **W3** | **Applied Math & Monitoring** | ⚪ Scheduled |
+| **W4** | **ML Systems & Feature Engineering** | ⚪ Scheduled |
+| **W5** | **Deep Learning & Scalable Serving** | ⚪ Scheduled |
+| **W6** | **GenAI, LLMs & RAG** | ⚪ Scheduled |
+| **W7** | **Cloud-Native MLOps (Azure)** | ⚪ Scheduled |
+| **W8** | **Capstone: Product Launch** | ⚪ Scheduled |
+
+---
+
+## 🛠️ Getting Started
+
+### 1. Prerequisites
+- Python 3.10+
+- Docker Desktop
+- VS Code (Extensions: Python, Pylance, Black)
+
+### 2. Environment Setup
+Run the following command to install the required corporate-standard libraries:
+```bash
+pip install -r requirements.txt
+
+# 🚀 AI Platform Engineering: 8-Week Professional Sprint
+**Lead Instructor:** Shekhar K Prasad | *Corporate AI Consultant & Systems Architect*
+
+Welcome to the Elite AI Platform Engineering Cohort. This repository is your primary source for code, documentation, and lab exercises. Over the next 8 weeks, we transition from writing Python scripts to building production-grade AI platforms.
+
+---
+
+## 📅 Weekly Roadmap
+
+| Week | Focus Area | Status |
+| :--- | :--- | :--- |
+| **W1** | **Professional Python Engineering** | 🟢 Active |
+| **W2** | **Data Access Layer (SQL/NoSQL)** | ⚪ Scheduled |
+| **W3** | **Applied Math & Monitoring** | ⚪ Scheduled |
+| **W4** | **ML Systems & Feature Engineering** | ⚪ Scheduled |
+| **W5** | **Deep Learning & Scalable Serving** | ⚪ Scheduled |
+| **W6** | **GenAI, LLMs & RAG** | ⚪ Scheduled |
+| **W7** | **Cloud-Native MLOps (Azure)** | ⚪ Scheduled |
+| **W8** | **Capstone: Product Launch** | ⚪ Scheduled |
+
+---
+
+## 🛠️ Getting Started
+
+### 1. Prerequisites
+- Python 3.10+
+- Docker Desktop
+- VS Code (Extensions: Python, Pylance, Black)
+
+### 2. Environment Setup
+Run the following command to install the required corporate-standard libraries:
+```bash
+pip install -r requirements.txt
+
+---
+
+### **2. Week 1: Folder & File Content Plan**
+
+Here is what you should put inside the **Week 1** sub-folders to ensure your first week is a success.
+
+#### **Day 1: Standards & Linting**
+* **File:** `Day1/messy_code.py`
+    * *Content:* A script with zero type hints, bad variable names (`x`, `y`), and inconsistent spacing.
+* **File:** `Day1/solution.py`
+    * *Content:* The same logic but using **Pydantic** for validation and **Type Hints**.
+* **Concept to Teach:** Why "linting" is a requirement for code reviews.
+
+#### **Day 2: The DataLoader (Composition)**
+* **File:** `Day2/data_loader.py`
+* **Activity:** Build the `DataLoader` component from your TOC.
+* **Consultant Tip:** Show how to use **Composition** to plug in different "Parsers" (CSV vs. JSON) without changing the main loader logic.
+
+#### **Day 3: Engine Interfaces (ABCs)**
+* **File:** `Day3/engine_interface.py`
+* **Content:**
+    ```python
+    from abc import ABC, abstractmethod
+
+    class BaseAIEngine(ABC):
+        @abstractmethod
+        def generate_response(self, prompt: str) -> str:
+            pass
+    ```
+* **Concept to Teach:** "Coding to an Interface." This is how you swap OpenAI for a local Llama model later.
+
+#### **Day 4: High-Performance Async**
+* **File:** `Day4/async_client.py`
+* **Activity:** Use `asyncio.gather` to call a mock API three times simultaneously.
+* **Concept to Teach:** I/O concurrency. Why synchronous code kills AI performance.
+
+#### **Day 5: The Platform CLI**
+* **File:** `Day5/cli_tool.py`
+* **Activity:** Use the `click` library to create a command: `python cli_tool.py run-pipeline`.
+* **Concept to Teach:** Turning code into a professional tool for DevOps/SRE teams.
+
+---
+
+### **3. Your "Day 0" Prep Checklist**
+1.  **Repo Setup:** Create the GitHub repo and upload the `README.md` and `requirements.txt`.
+2.  **Invitation:** Email your students the GitHub link and ask them to "Star" the repo. This builds their engagement early.
+3.  **Docker Check:** Ensure you have a simple `docker-compose.yml` ready for Week 2 so they can start SQL/Mongo with one click.
+
+**Would you like me to generate the full `requirements.txt` file with all the version-locked libraries now?**
+
