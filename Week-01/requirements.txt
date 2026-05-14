@@ -1,1 +1,35 @@
 
+###############################################################################
+# WEEK 1-2: PYTHON ENGINEERING & DATA LAYERS
+###############################################################################
+pydantic==2.6.1          # Data validation & settings management
+SQLAlchemy==2.0.27       # SQL Toolkit and ORM
+pymongo==4.6.1           # MongoDB Python driver
+redis==5.0.1             # Redis client for caching
+click==8.1.7             # Command line interface creation
+python-dotenv==1.0.1     # Managing environment variables
+black==24.2.0            # The uncompromising code formatter
+flake8==7.0.0            # Linter for PEP-8 compliance
+mypy==1.8.0              # Static type checker
+
+###############################################################################
+# WEEK 3-5: MATH, ML & DEEP LEARNING
+###############################################################################
+numpy==1.26.4            # Fundamental package for scientific computing
+pandas==2.2.0            # Data structures and analysis
+scikit-learn==1.4.1.post1# Machine learning library
+tensorflow==2.15.0       # Deep learning framework
+onnxruntime==1.17.1      # High-performance ONNX inference
+great-expectations==0.18.8 # Data quality and validation
+
+###############################################################################
+# WEEK 6-8: GEN AI & MLOPS AUTOMATION
+###############################################################################
+openai==1.12.0           # OpenAI API client
+langchain==0.1.7         # LLM application framework
+chromadb==0.4.22         # Vector database for RAG
+faiss-cpu==1.7.4         # Library for efficient similarity search
+azure-ai-ml==1.13.0      # Azure Machine Learning SDK
+azure-identity==1.15.0   # Azure Active Directory authentication
+fastapi==0.109.2         # High-performance web framework for APIs
+uvicorn==0.27.1          # ASGI server for FastAPI
